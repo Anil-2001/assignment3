@@ -7,12 +7,14 @@
  * *
  * Name: Anil Pokhrel Student ID: 118889237 Date: 17 Feb 2024
  * *********************************************************************************/
+var HTTP_PORT = process.env.PORT || 8080;
+var express = require("express");
 
-const express = require("express");
+var express = require("express");
 const path = require("path");
 const collegeData = require("./modules/collegeData"); // Adjust the path accordingly
-const app = express();
-const port = process.env.PORT || 8080;
+var app = express();
+var port = process.env.PORT || 8080;
 
 // Initialize collegeData
 collegeData.initialize()
